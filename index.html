@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- 스타일초기화 -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <style>
+        /* 폰트 로보토,산스코리아 */
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .clearfix::after{
+            content: '';
+            display:block;
+            clear:both;
+        }
+        .wrap{width:100%;overflow: hidden;}
+        /* 헤더스타일 */
+        header{
+            display:flex;
+            float:left;
+            font-size: 18px;
+            height:48px;
+            color:rgb(102,102,102);
+        }
+        .fontaw{
+            width:18px;
+        }
+        .fontaw:nth-child(1){
+            margin:0 16px;
+        }
+        .right{
+            margin-right:16px;
+        }
+        .header h2{
+            font-family: 'Noto Sans KR', sans-serif;
+            margin:0 72px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 43px;
+        }
+        .bottom-line{
+            display: flex;
+            width:100%;
+            border-bottom:1px solid rgb(238,238,238);
+        }
+        /* 센터스타일 */
+        .center{
+            font-family: 'Roboto', sans-serif;
+            height:380px;
+            width:100%;
+            text-align: center;
+        }
+        .main-img{
+            width:inherit;
+            vertical-align:top;
+            transform: translateY(-80px) scale(0.4) rotate(0);
+        }
+        .center h2{
+            font-size: 18px;
+            color:rgb(215,215,215);
+            transform: translateY(-170px);
+        }
+        .center h1{
+            font-weight: 400;
+            font-size:24px;
+            color:rgb(102,102,102);
+            transform:translateY(-150px);
+        }
+        .center p{
+            font-size: 18px;
+            transform:translateY(-140px);
+            color:rgb(136,136,136);
+        }
+        .center p img{
+            width:10px;
+        }
+        /* 중간스타일 */
+        .middle{
+            display:flex;
+            text-align: center;
+        }
+        .middle p{
+            color:rgb(121,121,121);
+            font-weight: 600;
+            font-size:14px;
+            margin-top: 25px;
+            margin-left:26px;
+        }
+        .middle .line{
+            margin-top:-5px;
+            padding-left: 34px;
+            height:14px;
+            border-right:2px solid rgb(215,215,215);
+            transform:translateY(-100px);
+        }
+        .middle p:first-child{
+            margin-left:55px;
+        }
+        .middle p:last-child{
+            margin-left:30px;
+        }
+        .middle p span{
+            font-size:10px;
+        }
+        /* 갤러리 스타일 */
+        .gallery img{
+            position: flex;
+            margin:0;padding:0;
+            width:23%;
+        }
+        /* 발바닥 스타일 */
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top:5px;
+            width:100%;
+            height:45px;
+            background-color: rgb(240, 240, 240);
+        }
+        .footer img{
+            margin:0 auto;
+            width:7%;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <img class="fontaw" src="/images/bars-solid.svg" alt="메뉴바">
+            <img class="fontaw" src="/images/search-solid.svg" alt="검색">
+            <h2>Profile</h2>
+            <img class="fontaw right" id="fa3" src="/images/user-alt-solid.svg" alt="개인정보">
+            <img class="fontaw right" src="/images/comments-solid.svg" alt="대화,채팅,말풍선">
+        </header>
+        <div class="bottom-line"></div>
+        <div class="center">
+            <img class="main-img" src="/images/gallery/main-img.png" alt="메인사진">
+            <h2>Complate</h2>
+            <h1>Hong Gil-dong</h1>
+            <p><img src="/images/map-marker-alt-solid.svg" alt="지도"> Seoul,joongu</p>
+            <div class="middle">
+                <p>1,120<br><span>팔로워</span></p>
+                <div class="line"></div>
+                <p>1,567<br><span>팔로윙</span></p>
+                <div class="line"></div>
+                <p>678<br><span>사진첩</span></p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="/images/gallery/1.jpg" alt="갤러리 이미지1">
+            <img src="/images/gallery/2.jpg" alt="갤러리 이미지2">
+            <img src="/images/gallery/3.jpg" alt="갤러리 이미지3">
+            <img src="/images/gallery/4.jpg" alt="갤러리 이미지4">
+            <img src="/images/gallery/5.jpg" alt="갤러리 이미지5">
+            <img src="/images/gallery/6.jpg" alt="갤러리 이미지6">
+            <img src="/images/gallery/7.jpg" alt="갤러리 이미지7">
+            <img src="/images/gallery/8.jpg" alt="갤러리 이미지8">
+        </div>
+        <footer class="footer">
+            <img src="/images/footer/home-solid.svg" alt="홈">
+            <img src="/images/footer/handshake-solid.svg" alt="악수악수!">
+            <img src="/images/footer/paper-plane-solid.svg" alt="종이비행기">
+            <img src="/images/footer/map-marked-alt-solid.svg" alt="오시는길">
+        </footer>
+    </section>
+</body>
+</html>
